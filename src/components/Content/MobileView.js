@@ -1,10 +1,24 @@
-import React from 'react'
-import TabbedView from './TabbedView'
+import React, { useContext } from "react";
+import SkylineBG from './SkylineBG'
+import ThemeContext from "./ThemeContext"
 
-const MobileView = ({ items }) => (
+
+const mobileView = '100 0 475 420'
+
+
+
+
+const MobileView = () => {
+
+  const [theme] = useContext(ThemeContext)
+
+  return (
   <div className='container box'>
-    <TabbedView items={items} />
+    <SkylineBG 
+    fillColor={theme.fillColor}
+    viewbox={mobileView}/>
   </div>
-)
+  )
+}
 
 export default MobileView
