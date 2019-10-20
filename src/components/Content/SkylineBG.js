@@ -3,10 +3,6 @@ import React from 'react'
 
 import "./skylineBg.css"
 
-// const mobileView = '100 0 475 420'
-// const mobileLandscapeView = '10 0 1450 420'
-// const laptopView = '10 0 1400 465'
-// let viewbox = mobileView
 
 const SkylineBG = props => {
   const { 

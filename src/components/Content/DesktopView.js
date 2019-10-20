@@ -1,20 +1,17 @@
-import React, { useContext } from "react";
-// import classNames from 'classnames'
+import React, { useContext } from "react"
 import SkylineBG from './SkylineBG'
-// import Tile from './Tile'
+import HeyThereHero from './HeyThereHero'
 import { useWindowDimensions } from '../WindowDimensionsProvider'
-import ThemeContext from "./ThemeContext"
+import ThemeContext from './ThemeContext'
 
 
 
-const mobileView = '100 0 475 420'
-const mobileLandscapeView = '10 0 1420 420'
-const laptopView = '100 0 1100 420'
-const desktopView = '50 0 1300 420'
+// const mobileView = '100 0 475 420'
+const mobileLandscapeViewBox = '10 0 1420 420'
+// const laptopView = '100 0 1100 420'
+const desktopViewBox = '50 0 1300 420'
 
-let viewbox = mobileView
-
-const fillColor =  '#4077a8'
+const heroViewBox = "0 0 510 163"
 
 
 const DesktopView = () => {
@@ -23,22 +20,21 @@ const DesktopView = () => {
 
   return (
     <div className='section'>
-      <div
-        // className={classNames('tile is-ancestor', {
-        //   'is-vertical': width > 414 && width < 1088
-        // })}
-      >
+      <HeyThereHero 
+        viewbox={heroViewBox} 
+        heroWidth={
+          (width > 670 && width < 1088 ? '85%':'40%' )
+        } >
+        
+      </HeyThereHero>
         <SkylineBG 
           fillColor={theme.fillColor}
           viewbox={
-            (width > 414 && width < 1088 ? mobileLandscapeView:desktopView )
+            (width > 414 && width < 1088 ? mobileLandscapeViewBox:desktopViewBox )
           }
            />
-        {/* {items.map((item, idx) => (
-          <Tile className={getClassName(idx)} key={item.title} {...item} />
-        ))} */}
+
       </div>
-    </div>
   )
 }
 

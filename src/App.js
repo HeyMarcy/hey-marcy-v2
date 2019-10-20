@@ -1,8 +1,7 @@
 import React from 'react'
-
 import Content from './components/Content'
 import WindowDimensionsProvider from './components/WindowDimensionsProvider'
-import data from './data.json'
+
 
 const ColorScheme = React.createContext()
 const colors= {
@@ -10,10 +9,13 @@ const colors= {
   fillColor: '#4077a8'
 }
 
+
+
+
 const App = () => (
-  <ColorScheme.Provider value={colors}>
+    <ColorScheme.Provider value={colors}>
   <WindowDimensionsProvider>
-    <Content items={data} />
+    <Content />
   </WindowDimensionsProvider>
   </ColorScheme.Provider>
 )

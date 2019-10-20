@@ -2,16 +2,19 @@ import React from 'react'
 import ResponsiveLayout from '../ResponsiveLayout'
 import MobileView from './MobileView'
 import DesktopView from './DesktopView'
+import styled from "@emotion/styled"
 
-const Content = ({ items }) => {
+
+const Content = () => {
+
   return (
     <ResponsiveLayout
       breakPoint={767}
       renderDesktop={() => (
-        <DesktopView items={items} />
+        <DesktopView  />
       )}
       renderMobile={() => (
-        <MobileView items={items} />
+        <MobileView />
       )}
     />
   )
