@@ -21,29 +21,13 @@ const ContainerHome = styled.div `
   z-index: 200;
 
 `
-// const Tagline = styled.div({
-
-// 	"font-size": "1.125em",
-
-// 	"font-weight": 400,
-// 	color: "white",
-// 	"text-align":"center",
-
-// 	a: {
-// 	  color: 'white',
-// 	  borderBottom: '2px',
-// 	  borderBottomStyle: "dotted",
-// 	  borderBottomColor: "rgba(255,255,255,0.8)",
-// 	  textDecoration: 'none',
-// 	}
-
-//   })
   
 const Tagline = styled.div `
 	font-family: "proxima-nova", sans-serif;
 	font-size: 1.125em;
 	line-height: 1.5;
 	margin: 1em;
+	padding: 0 5vw;
 	font-weight: 400;
 	color: white;
 	text-align:center;
@@ -51,7 +35,6 @@ const Tagline = styled.div `
   color: white;
   border-bottom: 1px dotted rgba(255,255,255,0.8);
   text-decoration: none;
-
   &:hover { border-bottom-style: solid};
   &:focus { background-color: rgba(0,0,0,0.5)}
 	
@@ -93,10 +76,10 @@ const HeyThereHero = props => {
 				</g>
 			</svg>
 			<Tagline >
-				<p>I'm Marcy and I live right here in Chicago. I have ten years of experience building scaleable accessible, and performant websites.</p>
+				<p>I'm Marcy and I have ten years of experience building scaleable accessible, and performant websites.</p>
 				<span>
 					<Obfuscate email="heymarcy.gmail.com" />
-					</span>
+				</span>
 
 			</Tagline>
 		</ContainerHome>
