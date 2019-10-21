@@ -15,7 +15,7 @@ const colors= {
 const App = () => (
   <ColorScheme.Provider value={colors}>
   <WindowDimensionsProvider>
-    <Content />
+    <Content style={{overflow: 'hidden'}} />
   </WindowDimensionsProvider>
   </ColorScheme.Provider>
 )
