@@ -76,7 +76,7 @@ const HeyThereHero = props => {
 				</g>
 			</svg>
 			<Tagline >
-				<p>I'm Marcy and I have ten years of experience building scaleable accessible, and performant websites.</p>
+				<p>I'm Marcy and I have ten years of experience building scaleable, accessible, and performant websites.</p>
 				<span>
 					<Obfuscate email="heymarcy.gmail.com" />
 				</span>

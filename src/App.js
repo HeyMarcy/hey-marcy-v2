@@ -13,7 +13,7 @@ const colors= {
 
 
 const App = () => (
-    <ColorScheme.Provider value={colors}>
+  <ColorScheme.Provider value={colors}>
   <WindowDimensionsProvider>
     <Content />
   </WindowDimensionsProvider>
