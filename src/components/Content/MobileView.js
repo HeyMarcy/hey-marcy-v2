@@ -15,12 +15,10 @@ const MobileView = () => {
 
   return (
   <div >
-         <HeyThereHero  viewbox={heroViewBox} heroWidth='75vw' >
-        
-        </HeyThereHero>
+    <HeyThereHero  viewbox={heroViewBox} heroWidth='75vw' />
     <SkylineBG 
-    fillColor={theme.fillColor}
-    viewbox={mobileViewBox}/>
+      fillColor={theme.fillColor}
+      viewbox={mobileViewBox}/>
   </div>
   )
 }
